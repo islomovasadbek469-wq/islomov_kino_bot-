@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  kino_bot:
+    build: .
+    container_name: islomov_kino_bot
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
